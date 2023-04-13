@@ -1,0 +1,31 @@
+.header {
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+        font-size: 1.25rem;
+
+        li {
+            font-weight: 1rem;
+            color: pink;
+
+            a {
+                color: orange;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
