@@ -1,0 +1,20 @@
+.preview {
+    display: flex;
+
+    .left {
+        background-color: purple;
+
+        .project-details {
+            background-color: orange;
+
+            h3 {
+                font-family: "Monument Extended", sans-serif;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .right {
+        background-color: brown;
+    }
+}

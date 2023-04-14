@@ -5,9 +5,12 @@
     align-items: center;
     padding: 1rem 2rem;
     border-bottom: 2px solid white;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     position: sticky;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    font-family: "Monument Extended", sans-serif;
 
     ul {
         display: flex;
@@ -16,16 +19,35 @@
         padding: 0;
         gap: 1rem;
         font-size: 1.25rem;
+        text-transform: uppercase;
 
         li {
             font-weight: 1rem;
             color: pink;
 
             a {
-                color: orange;
+                color: white;
                 text-decoration: none;
                 font-weight: bold;
+
+                &:hover {
+                    color: gray;
+                }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        margin: 0 auto;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    h3 {
+        display: none;
     }
 }

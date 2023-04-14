@@ -1,9 +1,11 @@
 <template>
-    <div class="left">
-        <PreviewDetails />
-    </div>
+    <section class="preview">
+        <div class="left">
+            <PreviewDetails />
+        </div>
 
-    <div class="right">
-        <PreviewDescription />
-    </div>
+        <div class="right">
+            <PreviewDescription />
+        </div>
+    </section>
 </template>

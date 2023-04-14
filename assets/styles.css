@@ -12,6 +12,26 @@
           margin-inline-end: 0;
 }
 
+@font-face {
+  font-family: "Monument Extended";
+  src: url("/assets/fonts/Monument_Extended/PPMonumentExtended-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Monument Extended";
+  src: url(/assets/fonts/Monument_Extended/PPMonumentExtended-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/Neue_Montreal/PPNeueMontreal-Book.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/Neue_Montreal/PPNeueMontreal-Bold.woff2") format("woff2");
+  font-weight: 800;
+}
 html {
   font-size: 18px;
 }
@@ -19,7 +39,7 @@ html body {
   background-color: black;
   color: white;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: "Neue Montreal", serif;
   font-size: 18px;
 }
 
@@ -30,9 +50,13 @@ html body {
   align-items: center;
   padding: 1rem 2rem;
   border-bottom: 2px solid white;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: sticky;
   top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-family: "Monument Extended", sans-serif;
 }
 .header ul {
   display: flex;
@@ -41,13 +65,45 @@ html body {
   padding: 0;
   gap: 1rem;
   font-size: 1.25rem;
+  text-transform: uppercase;
 }
 .header ul li {
   font-weight: 1rem;
   color: pink;
 }
 .header ul li a {
-  color: orange;
+  color: white;
   text-decoration: none;
   font-weight: bold;
+}
+.header ul li a:hover {
+  color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 0 auto;
+  }
+  header h1 {
+    text-align: center;
+  }
+  h3 {
+    display: none;
+  }
+}
+.preview {
+  display: flex;
+}
+.preview .left {
+  background-color: purple;
+}
+.preview .left .project-details {
+  background-color: orange;
+}
+.preview .left .project-details h3 {
+  font-family: "Monument Extended", sans-serif;
+  text-transform: uppercase;
+}
+.preview .right {
+  background-color: brown;
 }/*# sourceMappingURL=styles.css.map */
