@@ -7,7 +7,7 @@
         deliverables="Wireframe, Website"
         role="UI Designer, UI Developer"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nadm at lectus urna duis convallis. Nunc pulvinar sapien et ligula ullamcorper malesuada. Libero enim sed faucibus turpis in eu mi."
-        img="https://images.unsplash.com/photo-1554040305-68021c3fc4f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        img="https://images.unsplash.com/photo-1593528162296-dd14b511c7cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
     />
     <Project
         projectNumber="2"
