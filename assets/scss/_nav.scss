@@ -12,6 +12,17 @@
     backdrop-filter: blur(10px);
     font-family: "Monument Extended", sans-serif;
 
+    h1 {
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+
     ul {
         display: flex;
         list-style: none;
