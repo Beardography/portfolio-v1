@@ -1,0 +1,10 @@
+.resume {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    ul {
+        list-style: none;
+    }
+}

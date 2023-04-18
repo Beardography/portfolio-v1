@@ -161,4 +161,14 @@ html body {
   aspect-ratio: 16/9;
   -o-object-position: center;
      object-position: center;
+}
+
+.resume {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.resume ul {
+  list-style: none;
 }/*# sourceMappingURL=styles.css.map */
