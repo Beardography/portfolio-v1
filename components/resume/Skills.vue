@@ -3,11 +3,18 @@
         <h3>Design</h3>
 
         <ul>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Sketch</li>
-            <li>Adobe XD</li>
-            <li>After Effects</li>
+            <li v-for="skills in skills" :key="skills">{{ skills }}</li>
         </ul>
     </section>
 </template>
+
+<script>
+export default {
+    props: {
+        skills: {
+            type: Array,
+            default: "Put your skills here.",
+        },
+    },
+};
+</script>

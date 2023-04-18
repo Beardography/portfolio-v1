@@ -1,11 +1,25 @@
 <template>
     <section class="certifications">
-        <h3>2022</h3>
+        <h3>{{ year }}</h3>
 
         <ul>
-            <li>Certification 1</li>
-            <li>Certification 2</li>
-            <li>Certification 3</li>
+            <li v-for="certs in certs" :key="certs">{{ certs }}</li>
         </ul>
     </section>
 </template>
+
+<script>
+export default {
+    props: {
+        year: {
+            type: Number,
+            default: 2020,
+        },
+
+        certs: {
+            type: Array,
+            default: "Put your certifications here.",
+        },
+    },
+};
+</script>
