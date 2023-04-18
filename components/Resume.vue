@@ -4,6 +4,7 @@
             <!-- <ResumeSkills :skills="skills" />
             <ResumeCertifications :certs="certs" /> -->
             <slot />
+            <slot />
         </section>
 
         <section class="right">

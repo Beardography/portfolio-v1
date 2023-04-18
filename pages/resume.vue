@@ -7,7 +7,15 @@
         <ResumeSkills :skills="['skill 1', 'skill 2', 'skill 3', 'skill 4']" />
 
         <ResumeWorkExperience
-            workPlace="workPlace"
+            workPlace="Kiewit"
+            yearFrom="2020"
+            yearTo="2023"
+            role="UI Designer"
+            :tasks="['task 1', 'task 2', 'task 3', 'task 4']"
+        />
+
+        <ResumeWorkExperience
+            workPlace="Sandhills"
             yearFrom="2020"
             yearTo="2023"
             role="UI Designer"
