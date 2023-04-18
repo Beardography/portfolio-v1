@@ -1,8 +1,8 @@
 <template>
     <Project
-        projectNumber="1"
+        :projectNumber="1"
         title="Resource Planner: Redesign"
-        year="2023"
+        :year="2023"
         projectType="Redesign"
         deliverables="Wireframe, Website"
         role="UI Designer, UI Developer"
@@ -10,9 +10,9 @@
         img="https://images.unsplash.com/photo-1593528162296-dd14b511c7cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
     />
     <Project
-        projectNumber="2"
+        :projectNumber="2"
         title="Sweetness & Lightning"
-        year="2022"
+        :year="2022"
         projectType="Design"
         deliverables="Wireframe, Prototype, Website"
         role="UI Designer, UI Developer"
@@ -20,9 +20,9 @@
         img="https://images.unsplash.com/photo-1593528253488-a78b96de3119?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
     />
     <Project
-        projectNumber="3"
+        :projectNumber="3"
         title="Our Recipes"
-        year="2022"
+        :year="2022"
         projectType="Design"
         deliverables="Wireframe, Prototype, Website"
         role="UI Designer, UI Developer"
@@ -30,9 +30,9 @@
         img="https://images.unsplash.com/photo-1526199119161-4be1e3368d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
     />
     <Project
-        projectNumber="4"
+        :projectNumber="4"
         title="Foundation"
-        year="2021"
+        :year="2021"
         projectType="Design System"
         deliverables="Wireframe, Prototype, Website"
         role="UI Designer, UI Developer"
