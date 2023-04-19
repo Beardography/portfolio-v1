@@ -60,14 +60,12 @@
     .header {
         margin: 0 auto;
         background-color: orange;
+        // overflow: auto;
+        // position: relative;
 
         h1 {
             text-align: center;
             font-size: 1rem;
-        }
-
-        .mobile-nav {
-            display: inline-block;
         }
 
         ul {
@@ -77,5 +75,30 @@
 
     h3 {
         display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+
+        &.open {
+            display: block;
+            visibility: none;
+            position: fixed;
+            background-color: green;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            ul {
+                li {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    font-family: "Monument Extended", sans-serif;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

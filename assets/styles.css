@@ -116,14 +116,31 @@ html body {
     text-align: center;
     font-size: 1rem;
   }
-  .header .mobile-nav {
-    display: inline-block;
-  }
   .header ul {
     display: none;
   }
   h3 {
     display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-nav.open {
+    display: block;
+    visibility: none;
+    position: fixed;
+    background-color: green;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .mobile-nav.open ul li {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Monument Extended", sans-serif;
+    text-align: center;
   }
 }
 .preview {
