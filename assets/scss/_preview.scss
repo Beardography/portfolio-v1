@@ -1,0 +1,98 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 2px solid #fff;
+    padding: 1rem;
+    // margin-bottom: 2rem;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1600px;
+
+    &:first-of-type {
+        border-top: none;
+    }
+
+    .top {
+        display: flex;
+        gap: 2rem;
+
+        .left {
+            width: 20vw;
+            // background-color: purple;
+
+            .project-details {
+                // background-color: orange;
+
+                h3 {
+                    // font-family: "Monument Extended", sans-serif;
+                    // text-transform: uppercase;
+                    margin-bottom: 0.75rem;
+                }
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin-bottom: 0.75rem;
+                    }
+                }
+            }
+        }
+
+        .title {
+            width: 50vw;
+            // font-family: "Monument Extended", sans-serif;
+            // text-transform: uppercase;
+            // font-size: 2.5rem;
+            // letter-spacing: -2px;
+            // line-height: 1;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: gray;
+                }
+            }
+        }
+
+        .right {
+            width: 30vw;
+            // background-color: brown;
+
+            .description {
+                h3 {
+                    font-family: "Monument Extended", sans-serif;
+                    text-transform: uppercase;
+                    margin-bottom: 0.75rem;
+                }
+
+                p {
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        overflow: hidden;
+        // aspect-ratio: 16/9;
+        // height: 700px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 400px;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-position: center;
+
+            // &:hover {
+            //     opacity: 0.8;
+            // }
+        }
+    }
+}

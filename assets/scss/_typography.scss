@@ -1,0 +1,46 @@
+//////////////////////////
+// Monument Extended
+@font-face {
+    font-family: "Monument Extended";
+    src: url("/assets/fonts/Monument_Extended/PPMonumentExtended-Regular.woff2")
+        format("woff2");
+    font-weight: 400;
+    // font-style: normal;
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url(/assets/fonts/Monument_Extended/PPMonumentExtended-Bold.woff2)
+        format("woff2");
+    font-weight: 700;
+}
+
+// Neue Montreal
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/Neue_Montreal/PPNeueMontreal-Book.woff2")
+        format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/Neue_Montreal/PPNeueMontreal-Bold.woff2")
+        format("woff2");
+    font-weight: 800;
+}
+
+//////////////////////////
+h1 {
+    font-family: "Monument Extended", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Monument Extended", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
