@@ -6,5 +6,7 @@
             <li><NuxtLink to="/about">About</NuxtLink></li>
             <li><NuxtLink to="/resume">Resume</NuxtLink></li>
         </ul>
+
+        <NavigtionMobileNav />
     </header>
 </template>

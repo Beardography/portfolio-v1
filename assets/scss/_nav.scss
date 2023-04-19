@@ -50,14 +50,28 @@
             }
         }
     }
+
+    .mobile-nav {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    header {
+    .header {
         margin: 0 auto;
+        background-color: orange;
 
         h1 {
             text-align: center;
+            font-size: 1rem;
+        }
+
+        .mobile-nav {
+            display: inline-block;
+        }
+
+        ul {
+            display: none;
         }
     }
 
