@@ -1,8 +1,79 @@
 .resume {
-    background-color: green;
+    // background-color: green;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+
+    h1 {
+        // font-family: "Monument Extended", sans-serif;
+        // text-transform: uppercase;
+        // font-weight: 700;
+        // letter-spacing: -2px;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+        border-top: 2px solid #fff;
+    }
+
+    h3 {
+        // font-family: "Monument Extended", sans-serif;
+        // text-transform: uppercase;
+        // font-weight: 700;
+        margin-bottom: 0.5rem;
+
+        &:last-of-type {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .left {
+        width: 35vw;
+        // background-color: orange;
+
+        ul {
+            margin-bottom: 2rem;
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .skills,
+        .certifications {
+            margin-bottom: 1rem;
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            h3 {
+                // color: orange;
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+
+    .right {
+        width: 65vw;
+        // background-color: purple;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .work-experience {
+            // border-top: 2px solid #fff;
+            // padding-top: 0.5rem;
+            margin-bottom: 1rem;
+
+            ul {
+                li {
+                    margin-bottom: 0.75rem;
+                }
+            }
+        }
+    }
 
     ul {
         list-style: none;

@@ -11,7 +11,9 @@
             </div>
 
             <div class="title">
-                <h1>{{ title }}</h1>
+                <h1>
+                    <NuxtLink :to="`projects/${link}`">{{ title }}</NuxtLink>
+                </h1>
             </div>
 
             <div class="right">
@@ -20,7 +22,9 @@
         </section>
 
         <section class="bottom">
-            <img :src="img" />
+            <NuxtLink :to="`projects/${link}`">
+                <img :src="img" />
+            </NuxtLink>
         </section>
     </section>
 </template>
@@ -65,6 +69,11 @@ export default {
         img: {
             type: String,
             default: "https://via.placeholder.com/800x600",
+        },
+
+        link: {
+            type: String,
+            default: "https://www.google.com",
         },
     },
 };

@@ -25,8 +25,8 @@
                 // background-color: orange;
 
                 h3 {
-                    font-family: "Monument Extended", sans-serif;
-                    text-transform: uppercase;
+                    // font-family: "Monument Extended", sans-serif;
+                    // text-transform: uppercase;
                     margin-bottom: 0.75rem;
                 }
 
@@ -42,11 +42,20 @@
 
         .title {
             width: 50vw;
-            font-family: "Monument Extended", sans-serif;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            letter-spacing: -2px;
-            line-height: 1;
+            // font-family: "Monument Extended", sans-serif;
+            // text-transform: uppercase;
+            // font-size: 2.5rem;
+            // letter-spacing: -2px;
+            // line-height: 1;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: gray;
+                }
+            }
         }
 
         .right {
@@ -80,6 +89,10 @@
             height: auto;
             aspect-ratio: 16/9;
             object-position: center;
+
+            // &:hover {
+            //     opacity: 0.8;
+            // }
         }
     }
 }
