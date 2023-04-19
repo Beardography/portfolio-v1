@@ -103,13 +103,24 @@ html body {
 .header ul li a:hover {
   color: gray;
 }
+.header .mobile-nav {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
-  header {
+  .header {
     margin: 0 auto;
+    background-color: orange;
   }
-  header h1 {
+  .header h1 {
     text-align: center;
+    font-size: 1rem;
+  }
+  .header .mobile-nav {
+    display: inline-block;
+  }
+  .header ul {
+    display: none;
   }
   h3 {
     display: none;
@@ -180,6 +191,23 @@ html body {
      object-position: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .preview {
+    background-color: purple;
+  }
+  .preview .top {
+    width: 100%;
+    flex-direction: column;
+  }
+  .preview .top .left,
+  .preview .top .title,
+  .preview .top .right {
+    width: 100%;
+  }
+  .preview .top .title h1 {
+    font-size: 2rem;
+  }
+}
 .resume {
   display: flex;
   flex-direction: row;
