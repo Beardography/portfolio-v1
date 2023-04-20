@@ -57,7 +57,7 @@ html body {
   font-size: 18px;
 }
 
-.header {
+.nav .header {
   background-color: brown;
   display: flex;
   justify-content: space-between;
@@ -72,17 +72,23 @@ html body {
           backdrop-filter: blur(10px);
   font-family: "Monument Extended", sans-serif;
 }
-.header h1 {
+.nav .header button {
+  display: none;
+}
+.nav .header .mobile-nav {
+  display: none;
+}
+.nav .header h1 {
   font-size: 2rem;
 }
-.header h1 a {
+.nav .header h1 a {
   color: white;
   text-decoration: none;
 }
-.header h1 a:hover {
+.nav .header h1 a:hover {
   color: gray;
 }
-.header ul {
+.nav .header ul {
   display: flex;
   list-style: none;
   margin: 0;
@@ -91,56 +97,82 @@ html body {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
-.header ul li {
+.nav .header ul li {
   font-weight: 1rem;
   color: pink;
 }
-.header ul li a {
+.nav .header ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-.header ul li a:hover {
+.nav .header ul li a:hover {
   color: gray;
 }
-.header .mobile-nav {
+
+.mobile-nav {
   display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
+  .nav .header {
     margin: 0 auto;
-    background-color: orange;
   }
-  .header h1 {
+  .nav .header h1 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
-  .header ul {
+  .nav .header ul {
     display: none;
   }
-  h3 {
+  .nav .header button {
+    display: inline-block;
+    visibility: visible;
+  }
+  .nav h3 {
     display: none;
   }
-  .mobile-nav {
+  .nav .mobile-nav {
     display: none;
   }
-  .mobile-nav.open {
+  .nav .mobile-nav.open {
     display: block;
     visibility: none;
     position: fixed;
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
-  .mobile-nav.open ul li {
+  .nav .mobile-nav.open button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .nav .mobile-nav.open ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    list-style: none;
+    margin-top: 25vh;
+  }
+  .nav .mobile-nav.open ul li {
     font-size: 2rem;
     font-weight: 700;
     font-family: "Monument Extended", sans-serif;
     text-align: center;
+    text-transform: uppercase;
+  }
+  .nav .mobile-nav.open ul li a {
+    text-decoration: none;
+    color: white;
   }
 }
 .preview {
@@ -209,9 +241,6 @@ html body {
 }
 
 @media only screen and (max-width: 600px) {
-  .preview {
-    background-color: purple;
-  }
   .preview .top {
     width: 100%;
     flex-direction: column;

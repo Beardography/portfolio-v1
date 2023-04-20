@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="nav">
         <header class="header">
             <h1><NuxtLink to="/">Name.xyz</NuxtLink></h1>
             <ul>
