@@ -46,6 +46,14 @@ h3 {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
 html {
   font-size: 18px;
 }
@@ -57,7 +65,7 @@ html body {
   font-size: 18px;
 }
 
-.header {
+.nav .header {
   background-color: brown;
   display: flex;
   justify-content: space-between;
@@ -72,17 +80,23 @@ html body {
           backdrop-filter: blur(10px);
   font-family: "Monument Extended", sans-serif;
 }
-.header h1 {
+.nav .header button {
+  display: none;
+}
+.nav .header .mobile-nav {
+  display: none;
+}
+.nav .header h1 {
   font-size: 2rem;
 }
-.header h1 a {
+.nav .header h1 a {
   color: white;
   text-decoration: none;
 }
-.header h1 a:hover {
+.nav .header h1 a:hover {
   color: gray;
 }
-.header ul {
+.nav .header ul {
   display: flex;
   list-style: none;
   margin: 0;
@@ -91,28 +105,95 @@ html body {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
-.header ul li {
+.nav .header ul li {
   font-weight: 1rem;
   color: pink;
 }
-.header ul li a {
+.nav .header ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-.header ul li a:hover {
+.nav .header ul li a:hover {
   color: gray;
 }
 
+#open-button,
+#close-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  border: 2px solid white;
+}
+#open-button svg,
+#close-button svg {
+  fill: white;
+}
+
+.mobile-nav {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  header {
+  .nav .header {
     margin: 0 auto;
   }
-  header h1 {
+  .nav .header h1 {
     text-align: center;
+    font-size: 1.5rem;
   }
-  h3 {
+  .nav .header ul {
     display: none;
+  }
+  .nav .header button {
+    display: inline-block;
+    visibility: visible;
+  }
+  .nav h3 {
+    display: none;
+  }
+  .nav .mobile-nav {
+    display: none;
+  }
+  .nav .mobile-nav.open {
+    display: block;
+    visibility: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1rem 2rem;
+  }
+  .nav .mobile-nav.open button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .nav .mobile-nav.open ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    list-style: none;
+    margin-top: 25vh;
+  }
+  .nav .mobile-nav.open ul li {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Monument Extended", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .nav .mobile-nav.open ul li a {
+    text-decoration: none;
+    color: white;
   }
 }
 .preview {
@@ -180,6 +261,17 @@ html body {
      object-position: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .preview .top {
+    width: 100%;
+    flex-direction: column;
+  }
+  .preview .top .left,
+  .preview .top .title,
+  .preview .top .right {
+    width: 100%;
+  }
+}
 .resume {
   display: flex;
   flex-direction: row;
@@ -201,6 +293,7 @@ html body {
 }
 .resume .left {
   width: 35vw;
+  order: 1;
 }
 .resume .left ul {
   margin-bottom: 2rem;
@@ -222,6 +315,7 @@ html body {
 }
 .resume .right {
   width: 65vw;
+  order: 2;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -234,4 +328,35 @@ html body {
 }
 .resume ul {
   list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .resume {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .resume .left,
+  .resume .right {
+    width: 100%;
+  }
+  .resume .left {
+    order: 2;
+  }
+  .resume .right {
+    order: 1;
+  }
+  .resume .right .work-experience {
+    margin-bottom: 0;
+  }
+  .resume .right .work-experience ul li {
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+  .resume .right .work-experience ul li:last-of-type {
+    margin-bottom: 0;
+  }
+  .resume .right .work-experience:first-of-type h1 {
+    border: none;
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

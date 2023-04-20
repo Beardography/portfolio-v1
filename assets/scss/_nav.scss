@@ -1,67 +1,162 @@
-.header {
-    background-color: brown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-bottom: 2px solid white;
-    margin-bottom: 1rem;
-    position: sticky;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    font-family: "Monument Extended", sans-serif;
-
-    h1 {
-        font-size: 2rem;
-        // text-transform: lowercase;
-
-        a {
-            color: white;
-            text-decoration: none;
-
-            &:hover {
-                color: gray;
-            }
-        }
-    }
-
-    ul {
+.nav {
+    .header {
+        background-color: brown;
         display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        gap: 1rem;
-        font-size: 1.25rem;
-        text-transform: uppercase;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-bottom: 2px solid white;
+        margin-bottom: 1rem;
+        position: sticky;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        font-family: "Monument Extended", sans-serif;
 
-        li {
-            font-weight: 1rem;
-            color: pink;
+        button {
+            display: none;
+            // visibility: hidden;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+        h1 {
+            font-size: 2rem;
+            // text-transform: lowercase;
 
             a {
                 color: white;
                 text-decoration: none;
-                font-weight: bold;
 
                 &:hover {
                     color: gray;
                 }
             }
         }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 1rem;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+
+            li {
+                font-weight: 1rem;
+                color: pink;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: gray;
+                    }
+                }
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 600px) {
-    header {
-        margin: 0 auto;
+#open-button,
+#close-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border: 2px solid white;
 
-        h1 {
-            text-align: center;
-        }
+    svg {
+        fill: white;
     }
+}
 
-    h3 {
-        display: none;
+.mobile-nav {
+    // .hidden {
+    display: none;
+    // }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        .header {
+            margin: 0 auto;
+            // background-color: orange;
+            // overflow: auto;
+            // position: relative;
+
+            h1 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            ul {
+                display: none;
+            }
+
+            button {
+                display: inline-block;
+                visibility: visible;
+            }
+        }
+
+        h3 {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: none;
+
+            &.open {
+                // display: flex;
+                // display: inline-flex;
+                display: block;
+                visibility: none;
+                position: fixed;
+                // background-color: green;
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(15px);
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                padding: 1rem 2rem;
+
+                button {
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    position: relative;
+                    list-style: none;
+                    margin-top: 25vh;
+
+                    li {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        font-family: "Monument Extended", sans-serif;
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

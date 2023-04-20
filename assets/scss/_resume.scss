@@ -30,6 +30,7 @@
 
     .left {
         width: 35vw;
+        order: 1;
         // background-color: orange;
 
         ul {
@@ -57,6 +58,7 @@
 
     .right {
         width: 65vw;
+        order: 2;
         // background-color: purple;
         display: flex;
         flex-direction: column;
@@ -77,5 +79,48 @@
 
     ul {
         list-style: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .resume {
+        // background-color: purple;
+        flex-wrap: wrap;
+        padding: 0;
+
+        .left,
+        .right {
+            width: 100%;
+        }
+
+        .left {
+            order: 2;
+        }
+
+        .right {
+            order: 1;
+
+            .work-experience {
+                margin-bottom: 0;
+
+                ul {
+                    li {
+                        margin-bottom: 1.25rem;
+                        line-height: 1.5;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                &:first-of-type {
+                    h1 {
+                        border: none;
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
     }
 }
