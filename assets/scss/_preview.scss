@@ -19,6 +19,7 @@
 
         .left {
             width: 20vw;
+            order: 1;
             // background-color: purple;
 
             .project-details {
@@ -42,6 +43,7 @@
 
         .title {
             width: 50vw;
+            order: 2;
             // font-family: "Monument Extended", sans-serif;
             // text-transform: uppercase;
             // font-size: 2.5rem;
@@ -60,6 +62,7 @@
 
         .right {
             width: 30vw;
+            order: 3;
             // background-color: brown;
 
             .description {
@@ -100,9 +103,11 @@
 @media only screen and (max-width: 600px) {
     .preview {
         // background-color: purple;
+        padding: 0;
 
         .top {
             width: 100%;
+            gap: 1rem;
             flex-direction: column;
 
             .left,
@@ -112,9 +117,27 @@
             }
 
             .title {
-                // h1 {
-                //     font-size: 2rem;
-                // }
+                padding-top: 1rem;
+            }
+
+            .left {
+                order: 2;
+
+                .project-details {
+                    ul {
+                        li {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .title {
+                order: 1;
+            }
+
+            .right {
+                order: 3;
             }
         }
     }
