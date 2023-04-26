@@ -399,4 +399,29 @@ html body {
     border: none;
     padding-top: 0;
   }
+}
+.about {
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1600px;
+}
+.about h1 {
+  font-size: 4rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+.about .summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.about .summary img {
+  width: 35%;
+}
+.about .summary p {
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 65%;
 }/*# sourceMappingURL=styles.css.map */
