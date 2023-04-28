@@ -7,7 +7,7 @@
         deliverables="Wireframe, Website"
         role="UI Designer, UI Developer"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nadm at lectus urna duis convallis. Nunc pulvinar sapien et ligula ullamcorper malesuada. Libero enim sed faucibus turpis in eu mi."
-        img="~/assets/images/rp/tabs_approach.png"
+        img="./rp/tabs_approach.png"
         link="resource_planner"
     />
     <Project
